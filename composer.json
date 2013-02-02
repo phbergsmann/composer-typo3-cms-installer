@@ -1,0 +1,11 @@
+{
+    "name": "phbergsmann/typo3cmsinstaller",
+    "type": "composer-installer",
+    "license": "MIT",
+    "autoload": {
+        "psr-0": {"phbergsmann\\Composer\\Installers": "src/"}
+    },
+    "extra": {
+        "class": "phbergsmann\\Composer\\Installers\TYPO3CMSInstaller"
+    }
+}

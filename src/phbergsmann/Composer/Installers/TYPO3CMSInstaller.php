@@ -30,6 +30,7 @@ class TYPO3CMSInstaller extends \Composer\Installer\LibraryInstaller {
 	 * @return bool
 	 */
 	public function supports($packageType) {
+		var_dump($packageType);
 		return substr($packageType, 0, 9) === 'typo3-cms';
 	}
 

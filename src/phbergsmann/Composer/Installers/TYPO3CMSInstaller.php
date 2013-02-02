@@ -34,42 +34,7 @@ class TYPO3CMSInstaller extends \Composer\Installer\LibraryInstaller {
 	 * @return bool
 	 */
 	public function supports($packageType) {
-		var_dump($packageType);
-		var_dump(substr($packageType, 0, 9) === 'typo3-cms');
 		return substr($packageType, 0, 9) === 'typo3-cms';
-	}
-
-	/**
-	 * Installs specific package.
-	 *
-	 * @param InstalledRepositoryInterface $repo    repository in which to check
-	 * @param PackageInterface             $package package instance
-	 */
-	public function install(InstalledRepositoryInterface $repo, PackageInterface $package) {
-		// TODO: Implement install() method.
-	}
-
-	/**
-	 * Updates specific package.
-	 *
-	 * @param InstalledRepositoryInterface $repo    repository in which to check
-	 * @param PackageInterface             $initial already installed package version
-	 * @param PackageInterface             $target  updated version
-	 *
-	 * @throws InvalidArgumentException if $from package is not installed
-	 */
-	public function update(InstalledRepositoryInterface $repo, PackageInterface $initial, PackageInterface $target) {
-		// TODO: Implement update() method.
-	}
-
-	/**
-	 * Uninstalls specific package.
-	 *
-	 * @param InstalledRepositoryInterface $repo    repository in which to check
-	 * @param PackageInterface             $package package instance
-	 */
-	public function uninstall(InstalledRepositoryInterface $repo, PackageInterface $package) {
-		// TODO: Implement uninstall() method.
 	}
 
 	/**

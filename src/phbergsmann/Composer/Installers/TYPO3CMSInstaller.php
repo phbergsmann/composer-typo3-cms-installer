@@ -22,6 +22,10 @@ namespace phbergsmann\Composer\Installers;
  * @package Composer
  * @subpackage Installers
  */
+
+use Composer\Package\PackageInterface;
+use Composer\Repository\InstalledRepositoryInterface;
+
 class TYPO3CMSInstaller extends \Composer\Installer\LibraryInstaller {
 	/**
 	 * Decides if the installer supports the given type
